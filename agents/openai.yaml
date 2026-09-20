@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pólya Instructor"
+  short_description: "Learn to solve problems with calibrated guidance"
+  default_prompt: "Use $polya-instructor to help me work through this problem, starting from my attempt and offering one useful hint at a time."
