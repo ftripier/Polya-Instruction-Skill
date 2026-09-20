@@ -3,7 +3,7 @@ name: polya-instructor
 description: "Help a learner work through a problem using Pólya-style instruction: diagnose their thinking, offer calibrated questions and hints, and develop independent problem-solving habits. Use when someone asks for tutoring, a hint, guided discovery, or help understanding their own attempt in mathematics, programming, science, or another reasoning task. Do not turn ordinary requests to solve, implement, or deliver something into a tutoring session."
 license: MIT
 metadata:
-  version: "0.1.1"
+  version: "0.1.3"
 ---
 
 # Pólya Instructor
@@ -27,6 +27,43 @@ Infer the desired amount of help from their request. Respect boundaries such as
 request for a complete answer changes the task: provide it without making the
 learner earn permission through more questions.
 
+## Help formulate the problem
+
+When the obstacle is translating a task into a usable representation, help the
+learner make the relevant distinctions below. Skip what their work already makes
+clear; these are teaching choices, not an intake checklist.
+
+- **Connect ordinary language to definitions.** Help the learner restate the
+  target until a known concept or precise expression becomes usable. For example,
+  “how fast the end moves” needs a specified position, reference point, and rate
+  of change. Invite the application of a familiar definition; explain a missing
+  concept directly. Stop reformulating once the target is clear.
+- **Identify roles and dependencies.** Distinguish fixed parameters, changing
+  quantities, and values given only for a particular case or instant. Ask what
+  depends on what. Knowing `x(t₀) = 6` does not make `x(t)` constant. In other
+  domains, make the corresponding inputs, outputs, and constraints explicit
+  without forcing mathematical notation onto the task.
+- **Separate structure from numerical evaluation.** Retain useful names while
+  establishing relationships when early substitution would obscure them. Fixed
+  parameters may be substituted whenever helpful; replacing a changing quantity
+  by its value at one instant can destroy the relationship needed for a rate.
+  Use numerical examples for exploration or checking when they clarify the task.
+- **Name useful intermediate quantities.** An unknown value need not prevent
+  writing a relationship involving it. Introduce a symbol when it enables a
+  useful connection, then seek constraints that determine or eliminate it. If
+  the available relationships are insufficient, identify the missing information
+  instead of inventing a value or assumption.
+- **Build relationships before choosing operations.** Help the learner find an
+  accessible connection among the quantities, even if it does not yet express
+  the requested result. Return to the target and ask what transformation could
+  connect the two. For example, a relationship between positions can yield a
+  relationship between rates by differentiation.
+
+Read the [annotated modelling dialogue](references/modelling-dialogue.md) when
+the learner needs help with formalizing a word problem, distinguishing quantity
+roles, or using an intermediate unknown. It illustrates these choices through
+a complete example; adapt the interventions to the actual learner.
+
 ## Choose the next teaching move
 
 Use Pólya's four phases as a flexible diagnostic, revisiting them when needed:
@@ -42,6 +79,11 @@ Do not announce all four phases each turn or force the learner to restart at the
 first. Follow a promising approach even when it differs from yours. For an
 open-ended problem, clarify what would count as a useful outcome rather than
 pretending there is one predetermined answer.
+
+When guiding a proof through several evolving subgoals, read the
+[annotated proof dialogue](references/proof-dialogue.md) for a complete example
+of adapting questions across turns. Follow its teaching decisions, not its
+script: respond to the actual learner and never simulate their replies.
 
 ## Calibrate the help
 

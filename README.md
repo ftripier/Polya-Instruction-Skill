@@ -15,6 +15,10 @@ thinking step, then checks whether the prompt is within reach, preserves room
 for discovery, teaches a reusable habit, and has a motivation you can recognize.
 These checks adapt §17, “Good questions and bad questions.”
 
+For word problems, it helps turn the request into a precise target, distinguish
+quantities and their dependencies, and introduce useful intermediate unknowns
+before choosing operations or evaluating the result.
+
 ## Install
 
 This uses the same [Skills CLI](https://github.com/vercel-labs/skills) as
@@ -121,6 +125,12 @@ deliver something should keep their original meaning.
   metadata; Claude Code uses `SKILL.md` directly.
 - [references/teaching-notes.md](references/teaching-notes.md): illustrative
   interactions and a reading guide to the relevant book sections.
+- [references/proof-dialogue.md](references/proof-dialogue.md): a complete,
+  annotated tutor–learner conversation, including a false start, construction of
+  a proof, and reflection on the method.
+- [references/modelling-dialogue.md](references/modelling-dialogue.md): a worked
+  conversation about a moving shadow, from defining the requested speed to
+  building a model, calculating the result, and checking its meaning.
 - [LICENSE](LICENSE): MIT license for the original package contents.
 
 The teaching instructions are an original adaptation. The package does not

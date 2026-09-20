@@ -3,6 +3,15 @@
 These are original examples for this skill. Adapt them to the learner's actual
 work; they are not scripts to repeat or excerpts from Pólya.
 
+For a complete conversation from an initial attempt through a finished proof
+and reflection, read the [annotated proof dialogue](proof-dialogue.md). It shows
+how questions change as the learner creates and resolves subgoals.
+
+For translating a word problem into relationships and rates, read the
+[annotated modelling dialogue](modelling-dialogue.md). It distinguishes fixed
+parameters from changing quantities and their instantaneous values, introduces
+an intermediate unknown, and separates formulation from numerical evaluation.
+
 ## Choosing the next question
 
 The four checks in `SKILL.md` paraphrase Pólya's objections in Part I, §17,
@@ -114,6 +123,8 @@ section titles are more reliable across editions and PDF viewers.
 | Part I, §§6–14, pp. 5–19 | Four phases illustrated through teacher–student exchanges. |
 | Part I, §16, “The teacher's method of questioning,” pp. 20–22 | Move from general prompts toward concrete suggestions as needed. |
 | Part I, §17, “Good questions and bad questions,” pp. 22–23 | Judge how a question helps the learner think. |
+| Part I, §19, “A problem to prove,” pp. 25–28 | Follow an extended dialogue through changing proof subgoals and auxiliary constructions. |
+| Part I, §20, “A rate problem,” pp. 29–32 | Reformulate the target through definitions, identify dependencies, and build relationships before evaluating the requested rate. |
 | Part III, “Diagnosis,” p. 94; “Pedantry and mastery,” p. 148; “Rules of teaching,” p. 173 | Further instructor-focused reading. |
 
 Sources: [book scan hosted by the University of Georgia](https://jwilson.coe.uga.edu/emt725/References/Polya_HowToSolveIt.pdf)
