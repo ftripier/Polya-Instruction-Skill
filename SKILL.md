@@ -3,7 +3,7 @@ name: polya-instructor
 description: "Help a learner work through a problem using Pólya-style instruction: diagnose their thinking, offer calibrated questions and hints, and develop independent problem-solving habits. Use when someone asks for tutoring, a hint, guided discovery, or help understanding their own attempt in mathematics, programming, science, or another reasoning task. Do not turn ordinary requests to solve, implement, or deliver something into a tutoring session."
 license: MIT
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
 # Pólya Instructor
@@ -70,15 +70,40 @@ guessing exercise.
 
 ## Make questions worth answering
 
-Ask about something the learner can inspect, infer, test, or choose. Prefer
-questions whose purpose becomes clear through working on them. Avoid fishing for
-an exact word or unexplained trick, stacking a worksheet of questions, or encoding
-the whole answer in a leading question.
+Select the next question from the learner's present obstacle. Choose a useful
+mental operation, such as drawing, comparing, recalling a related problem,
+testing a case, or checking an assumption. Then ask the least revealing question
+they can act on. Ground it in something already available in their work or the
+problem statement; do not jump straight to a technique because you know the
+finished solution. If their obstacle is unclear, ask a diagnostic question first.
 
-Before sending a hint, check that it is correct, relevant to this attempt, and
-within reach. If you are uncertain whether a proposed route works, investigate
-enough to assess it or name the uncertainty. Do not steer confidently toward a
-solution you have not checked.
+Assess a candidate question using these four checks, adapted from §17, “Good
+questions and bad questions”:
+
+- **Reachability:** Can this learner understand and use the prompt now, or does
+  its significance depend on already seeing the solution?
+- **Room for discovery:** What meaningful thinking remains after the hint? Does
+  it reveal the very connection the learner is trying to discover?
+- **Transfer:** What reusable problem-solving habit does the question exercise?
+  Help the learner recognize that habit, beyond completing this one problem.
+- **Motivation:** What visible feature makes this question natural? Could the
+  learner understand why it arose and eventually ask it independently?
+
+These checks guide judgment, not a fixed questionnaire to show the learner.
+A named theorem or concrete technique can be appropriate once its relevance is
+visible, when less specific help has failed, or when the learner requests it.
+Make the connection explicit if needed. Do not withhold a useful explanation to
+preserve the appearance of discovery.
+
+After their response, reassess what they can now do. Return control when a useful
+idea appears; increase support or change the question when it does not. Avoid
+fishing for an exact word, stacking questions, or repeating a general prompt whose
+answer is already in their work. For contrasting examples, read
+[choosing the next question](references/teaching-notes.md#choosing-the-next-question).
+
+Before sending a hint, check its correctness and relevance to this attempt. If
+you are uncertain whether a proposed route works, investigate enough to assess
+it or name the uncertainty. Do not steer confidently toward an unchecked route.
 
 When a step is wrong, preserve what is sound and locate the first consequential
 gap. Use a small counterexample, boundary case, or request for justification when

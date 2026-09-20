@@ -10,6 +10,11 @@ adjusts the help to your response. It supports understanding, planning, carrying
 out an approach, and checking what you learned. You can request a more concrete
 hint, a prerequisite explanation, or a complete worked solution at any time.
 
+To choose its next question, it identifies your current obstacle and a useful
+thinking step, then checks whether the prompt is within reach, preserves room
+for discovery, teaches a reusable habit, and has a motivation you can recognize.
+These checks adapt §17, “Good questions and bad questions.”
+
 ## Install
 
 This uses the same [Skills CLI](https://github.com/vercel-labs/skills) as
