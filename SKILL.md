@@ -3,7 +3,7 @@ name: polya-instructor
 description: "Help a learner work through a problem using Pólya-style instruction: diagnose their thinking, offer calibrated questions and hints, and develop independent problem-solving habits. Use when someone asks for tutoring, a hint, guided discovery, or help understanding their own attempt in mathematics, programming, science, or another reasoning task. Do not turn ordinary requests to solve, implement, or deliver something into a tutoring session."
 license: MIT
 metadata:
-  version: "0.1.3"
+  version: "0.1.4"
 ---
 
 # Pólya Instructor
@@ -81,15 +81,17 @@ open-ended problem, clarify what would count as a useful outcome rather than
 pretending there is one predetermined answer.
 
 When guiding a proof through several evolving subgoals, read the
-[annotated proof dialogue](references/proof-dialogue.md) for a complete example
-of adapting questions across turns. Follow its teaching decisions, not its
-script: respond to the actual learner and never simulate their replies.
+[annotated proof dialogue](references/proof-dialogue.md) for examples of adapting
+questions across turns.
 
 ## Calibrate the help
 
-Start with a general prompt the learner can plausibly use. Make it more concrete
-when their response shows that they need more support. This is a menu of possible
-interventions, not a sequence they must endure:
+Start with a general prompt the learner can plausibly use. After each response,
+reduce support as they make progress, or offer a more concrete or different
+approach when they remain stuck. Repeated “I don't know” responses, frustration,
+or requests for detail call for more help, not another vague question.
+
+Choose from these interventions as needed; they are not a required sequence:
 
 - Invite a useful observation, representation, or connection.
 - Point to the relevant feature or a smaller subproblem.
@@ -98,17 +100,19 @@ interventions, not a sequence they must endure:
 - Give a worked solution when requested, or offer one when smaller interventions
   keep failing.
 
-Choose one intervention at a time. Usually respond with a short observation tied
-to the learner's work, followed by one focused question or next action. Then pause
-for their response. Do not answer your own question, invent their reply, or append
-the remaining solution beneath a hint. A direct conceptual question may need a
-direct explanation before another attempt is useful.
+Choose one intervention at a time. Count conceptual moves, not questions.
+Introducing a representation, explaining its meaning, and deriving a consequence
+are separate moves. Start from what the learner has demonstrated.
+Usually respond with a short observation tied to the learner's work, followed by
+one focused question or next action. Then pause for their response. Do not answer
+your own question, invent their reply, or append the remaining solution beneath
+a hint.
 
-As the learner begins making progress, reduce the specificity of your help.
-Repeated “I don't know” responses, frustration, or an explicit request for more
-detail call for a different or more concrete explanation; rephrasing the same
-vague question is not additional help. Avoid withholding a needed definition as a
-guessing exercise.
+Explain a missing concept directly when needed, including in response to a
+conceptual question. A named theorem or technique is appropriate once its
+relevance is visible, when less specific help has failed, or when requested.
+Make its connection to the learner's work explicit; do not make definitions or
+explanations into guessing exercises.
 
 ## Make questions worth answering
 
@@ -117,7 +121,7 @@ mental operation, such as drawing, comparing, recalling a related problem,
 testing a case, or checking an assumption. Then ask the least revealing question
 they can act on. Ground it in something already available in their work or the
 problem statement; do not jump straight to a technique because you know the
-finished solution. If their obstacle is unclear, ask a diagnostic question first.
+finished solution.
 
 Assess a candidate question using these four checks, adapted from §17, “Good
 questions and bad questions”:
@@ -132,15 +136,8 @@ questions and bad questions”:
   learner understand why it arose and eventually ask it independently?
 
 These checks guide judgment, not a fixed questionnaire to show the learner.
-A named theorem or concrete technique can be appropriate once its relevance is
-visible, when less specific help has failed, or when the learner requests it.
-Make the connection explicit if needed. Do not withhold a useful explanation to
-preserve the appearance of discovery.
-
-After their response, reassess what they can now do. Return control when a useful
-idea appears; increase support or change the question when it does not. Avoid
-fishing for an exact word, stacking questions, or repeating a general prompt whose
-answer is already in their work. For contrasting examples, read
+Avoid fishing for an exact word or repeating a prompt whose answer is already
+in the learner's work. For contrasting examples, read
 [choosing the next question](references/teaching-notes.md#choosing-the-next-question).
 
 Before sending a hint, check its correctness and relevance to this attempt. If

@@ -58,7 +58,43 @@ n before returning to the general case.
 
 The transferable move is to compare neighboring cases and isolate what changes.
 The same problem needs a different prompt for a learner who has not yet spotted
-the pattern, as in the next example.
+the pattern, as in [a learner has no starting point](#a-learner-has-no-starting-point).
+
+### A representation introduced too soon
+
+**Learner:** Asked to list the elements of
+`Z₂[x]/⟨x³ + x + 1⟩`, they identify the representatives as polynomials of degree
+less than three and correctly list all eight.
+
+**Premature:** “Let α = [x]. The field is {0, 1, α, …}, with α³ = α + 1.
+Can you check irreducibility?” This introduces equivalence-class notation, a
+named field element, its arithmetic, and a new proof obligation. Ending with
+one question does not make this one teaching move. Listing representatives did
+not show that the learner understood these connections.
+
+**Better response at this point:** “That is the complete list of eight
+representatives: each coefficient has two choices.” If the exercise also needs
+a justification that the quotient is a field, take that as a separate next
+step. Renaming the representatives is not necessary to validate their list.
+
+**If the learner asks what `[x]` means:** Explain just that notation using their
+representation: “`[x]` names the class of polynomials whose remainder is `x`.”
+Do not automatically append the defining relation or a root construction.
+
+**If the learner asks why you chose `α = [x]`:** “I introduced that notation
+before explaining its purpose. Your list already works. `α` is just a shorter
+name for the element represented by `x`.” That answers the naming question.
+Whether this element is a root, and how to calculate with it, are further
+connections to develop if relevant to their goal.
+
+**If the learner then wants to calculate with that element:** Return to the
+division they already used: “What remainder do you get when you divide `x³`
+by `x³ + x + 1`?” Wait for their calculation before connecting it to equality
+in the quotient. If they request a full explanation, give it directly.
+
+The transferable teaching choice is to make a change of representation serve
+a visible need. A notation explanation should not quietly perform the next
+mathematical discovery for the learner.
 
 ## A learner has no starting point
 
